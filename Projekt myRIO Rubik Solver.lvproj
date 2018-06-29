@@ -36,11 +36,9 @@
 			<Item Name="myRIO Project Documentation.html" Type="Document" URL="../documentation/myRIO Project Documentation.html"/>
 		</Item>
 		<Item Name="Sub VIs" Type="Folder">
-			<Item Name="OrientationStateMachine.vi" Type="VI" URL="../Sub VIs/OrientationStateMachine.vi"/>
 			<Item Name="ParseSolverString.vi" Type="VI" URL="../Sub VIs/ParseSolverString.vi"/>
 			<Item Name="StreamErrorFilter.vi" Type="VI" URL="../Sub VIs/StreamErrorFilter.vi"/>
 			<Item Name="StreamInitPC.vi" Type="VI" URL="../Sub VIs/StreamInitPC.vi"/>
-			<Item Name="StreamInitRT.vi" Type="VI" URL="../Sub VIs/StreamInitRT.vi"/>
 		</Item>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="TestOrientationStateMachine.vi" Type="VI" URL="../Tests/TestOrientationStateMachine.vi"/>
@@ -143,6 +141,7 @@
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="OrientationFSM.vi" Type="VI" URL="../Sub VIs/OrientationFSM.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -226,8 +225,10 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="SubVIs" Type="Folder">
+			<Item Name="OrientationFSM.vi" Type="VI" URL="../Sub VIs/OrientationFSM.vi"/>
 			<Item Name="RubikStart.vi" Type="VI" URL="../Sub VIs/RubikStart.vi"/>
 			<Item Name="RubikTurnFSM.vi" Type="VI" URL="../Sub VIs/RubikTurnFSM.vi"/>
+			<Item Name="StreamInitRT.vi" Type="VI" URL="../Sub VIs/StreamInitRT.vi"/>
 		</Item>
 		<Item Name="MainRT.vi" Type="VI" URL="../MainRT.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -343,7 +344,6 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="OrientationState.ctl" Type="VI" URL="../Controls/OrientationState.ctl"/>
-			<Item Name="OrientationStateMachine.vi" Type="VI" URL="../Sub VIs/OrientationStateMachine.vi"/>
 			<Item Name="ParseSolverString.vi" Type="VI" URL="../Sub VIs/ParseSolverString.vi"/>
 			<Item Name="rioembeddedcanlvapi.dll" Type="Document" URL="rioembeddedcanlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -353,7 +353,6 @@ AddOutputFilter chunkFilter
 			<Item Name="ServoEnumControl.ctl" Type="VI" URL="../Controls/ServoEnumControl.ctl"/>
 			<Item Name="ServoRelAngleControl.ctl" Type="VI" URL="../Controls/ServoRelAngleControl.ctl"/>
 			<Item Name="StreamErrorFilter.vi" Type="VI" URL="../Sub VIs/StreamErrorFilter.vi"/>
-			<Item Name="StreamInitRT.vi" Type="VI" URL="../Sub VIs/StreamInitRT.vi"/>
 			<Item Name="Tag-t&apos;DataStreamCluster.ctl&apos;.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-t&apos;DataStreamCluster.ctl&apos;.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
